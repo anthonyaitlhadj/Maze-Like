@@ -6,8 +6,13 @@ public class LifeScript : MonoBehaviour {
 
 	public int Pv; 
 
+	void Start()
+	{
+		Debug.Log(Pv);
+	}
+
 	public virtual void Damage(int d)
 	{
-		Pv = -d;
+		Pv -= d;
 	}
 }

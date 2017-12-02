@@ -6,7 +6,7 @@ public class PlayerPositionScript : MonoBehaviour {
 
 	public Transform CamTransform;
 	public float SpeedRotation;
-	
+
 	// Update is called once per frame
 	void Update () {
 		float y = Input.GetAxis("Mouse X");

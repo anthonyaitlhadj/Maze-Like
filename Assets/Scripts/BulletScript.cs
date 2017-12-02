@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+	void Start()
+    {
 		Destroy (gameObject, 2);
-	}
+    }
 
 	private void OnCollisionEnter(Collision c)
 	{
