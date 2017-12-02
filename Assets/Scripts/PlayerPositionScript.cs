@@ -13,9 +13,6 @@ public class PlayerPositionScript : MonoBehaviour {
 		float x = Input.GetAxis("Mouse Y");
 
 		transform.eulerAngles += new Vector3 (0,y,0) * SpeedRotation;
-
-		float XClamp = Mathf.Clamp (CamTransform.eulerAngles.x + (SpeedRotation * x), 60, -60);
-
 		CamTransform.eulerAngles += new Vector3 (-x,0,0) * SpeedRotation;
 	}
 }

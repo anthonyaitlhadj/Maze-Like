@@ -13,7 +13,7 @@ public class BulletScript : MonoBehaviour {
 	{
 		if (c.gameObject.GetComponent<LifeScript>()) 
 		{
-			c.gameObject.GetComponent<LifeScript>().Damage(2);
+			c.gameObject.GetComponent<LifeScript>().Damage(5);
 		}
 		Destroy(gameObject);
 	}

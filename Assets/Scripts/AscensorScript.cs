@@ -10,7 +10,7 @@ public class AscensorScript : MonoBehaviour {
 
 	void Update ()
 	{
-		float f = Speed * Time.deltaTime;
+		//float f = Speed * Time.deltaTime;
 		transform.localPosition = Vector3.Lerp(StartPosition, EndPosition, (Mathf.Sin(Time.time)+1)/2);
 	}
 }
