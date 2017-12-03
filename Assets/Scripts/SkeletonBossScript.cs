@@ -2,15 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
-public class SkeletonScript : LifeScript {
+public class SkeletonBossScript : LifeScript {
 
 	private NavMeshAgent agent;
 	public Transform Destination;
 	private Animator animator;
+	private bool onAttack;
 
 	void Start(){
 		agent = GetComponent<NavMeshAgent>();
+		onAttack = false;
 	}
 
 	public override void Damage(int d)
